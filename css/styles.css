@@ -14,9 +14,8 @@ body nav {
   background-color: black;
   flex-wrap: wrap;
   height: 0rem;
-  min-height: 8vh;
+  min-height: 15rem;
   overflow-y: hidden;
-  transition: height 1s ease;
 }
 body nav .main-title {
   font-size: 2.5em;
@@ -27,8 +26,6 @@ body nav .main-title {
 }
 nav .nav-elements {
   display: flex;
-  /* justify-content: space-between;   */
-  /* flex-wrap: nowrap; */
 }
 nav .nav-elements li {
   list-style: none;
@@ -36,7 +33,7 @@ nav .nav-elements li {
 nav .nav-elements a {
   text-decoration: none;
   color: aqua;
-  padding: 0px 15px;
+  padding: 3px 15px;
   font-size: 1.5em;
   font-family: "Rajdhani", sans-serif;
 }
@@ -56,15 +53,12 @@ nav .social-icons a {
 nav .social-icons a:hover {
   color: greenyellow;
 }
-nav .ham-burger {
-  position: absolute;
-  color: black;
-  top: 2%;
-  right: 2%;
+nav .ham-burger{
   color: aqua;
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: flex-end;
+  font-size: 1.5em;
+  position:absolute;
+  top: 2%;
+  right: 5%;
   display: none;
 }
 nav span {
@@ -73,7 +67,11 @@ nav span {
 .collapse {
   height: auto;
 }
+
 @media only screen and (max-width: 1070px) {
+  nav{
+     min-height: 4rem !important; 
+  } 
   nav .nav-elements {
     flex-direction: column;
   }
