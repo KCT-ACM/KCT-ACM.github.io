@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: hidden; 
 }
 a {
   text-decoration: none;
@@ -28,9 +28,10 @@ body nav {
   align-items: center;
   background-color: black;
   flex-wrap: wrap;
-  height: 0rem;
-  min-height: 15rem;
-  overflow-y: hidden;
+  height: 0vh;
+  min-height: 8vh;
+  overflow: hidden;
+  transition: height 1s ease;
 }
 body nav .main-title {
   font-size: 2.5em;
@@ -53,7 +54,7 @@ nav .nav-elements a {
   font-family: "Rajdhani", sans-serif;
 }
 nav .nav-elements a:hover {
-  background-color: aqua;
+  background-color:orange;
   color: black;
 }
 nav .social-icons {
@@ -66,13 +67,13 @@ nav .social-icons a {
   padding: 0px 8px;
 }
 nav .social-icons a:hover {
-  color: greenyellow;
+  color: orange;
 }
 nav .ham-burger{
   color: aqua;
   font-size: 1.5em;
   position:absolute;
-  top: 2%;
+  top: 17px;
   right: 5%;
   display: none;
 }
@@ -80,21 +81,21 @@ nav span {
   cursor: pointer;
 }
 .collapse {
-  height: auto;
+  height: 25rem;
+  
 }
 
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 1073px) {
   nav{
      min-height: 4rem !important; 
-  } 
+  }  
   nav .nav-elements {
     flex-direction: column;
   }
   nav {
     display: block !important;
     flex-direction: column !important;
-    align-items: flex-start !important;
-  }
+  } 
   nav .ham-burger {
     display: initial;
   }
@@ -103,10 +104,28 @@ nav span {
     padding: 6px 10px;
   }
 }
-@media only screen and (min-width: 1070px) {
-  nav {
+ @media only screen and (min-width: 1070px) {
+   nav {
     height: 0rem !important;
     min-height: 8vh !important;
+  } 
+} 
+@media only screen and (max-height: 650px) and (min-width: 1074px){
+  body nav .main-title{
+    font-size: 5vh;
+    padding-bottom: 60px;
+  }
+  body nav .nave{
+    padding-bottom: 50px;
+  }
+  body nav .nav-elements{
+    font-size: 2vh;
+  }
+  body nav .social-icons{
+    padding-bottom: 50px;
+  }
+  body nav .social-icons a{
+    font-size: 2.5vh;
   }
 }
 /*************************************1NAV!**************************************/
