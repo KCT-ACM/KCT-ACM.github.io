@@ -6,6 +6,7 @@ body {
 }
 a {
   text-decoration: none;
+  background-color: transparent;
 }
 .body{
     overflow-x:hidden !important;
@@ -60,6 +61,7 @@ nav .nav-elements a:hover {
 nav .social-icons {
   display: flex;
   flex-wrap: nowrap;
+  margin-right: 1rem;
 }
 nav .social-icons a {
   color: aqua;
@@ -85,7 +87,8 @@ nav span {
   
 }
 
-@media only screen and (max-width: 1073px) {
+
+@media only screen and (max-width: 1089px) {
   nav{
      min-height: 4rem !important; 
   }  
@@ -103,8 +106,11 @@ nav span {
     width: 40%;
     padding: 6px 10px;
   }
+  nav .social-icons{
+    margin-left: 2.5rem ;
+  }
 }
- @media only screen and (min-width: 1070px) {
+ @media only screen and (min-width: 1089px) {
    nav {
     height: 0rem !important;
     min-height: 8vh !important;
