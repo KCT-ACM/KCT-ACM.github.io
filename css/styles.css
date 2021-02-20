@@ -29,8 +29,8 @@ body nav {
   align-items: center;
   background-color: black;
   flex-wrap: wrap;
-  height: 0vh;
-  min-height: 8vh;
+  height: 0px;
+  min-height: 80px;
   overflow: hidden;
   transition: height 1s ease;
 }
@@ -40,6 +40,7 @@ body nav .main-title {
   padding-left: 1rem;
   color: aqua;
   cursor: pointer;
+  width: 160px;
 }
 nav .nav-elements {
   display: flex;
@@ -53,10 +54,14 @@ nav .nav-elements a {
   padding: 3px 15px;
   font-size: 1.5em;
   font-family: "Rajdhani", sans-serif;
+  transition: background-color 0.5s ease;
 }
 nav .nav-elements a:hover {
   background-color:orange;
-  color: black;
+  color: black !important;
+}
+nav .nav-elements a:focus{
+  color: white;
 }
 nav .social-icons {
   display: flex;
@@ -67,6 +72,7 @@ nav .social-icons a {
   color: aqua;
   font-size: 1.5em;
   padding: 0px 8px;
+  transition: color 0.4s ease;
 }
 nav .social-icons a:hover {
   color: orange;
@@ -103,35 +109,17 @@ nav span {
     display: initial;
   }
   nav .nav-elements a {
-    width: 40%;
+    width: 150px;
     padding: 6px 10px;
   }
   nav .social-icons{
     margin-left: 2.5rem ;
   }
 }
- @media only screen and (min-width: 1089px) {
+ @media only screen and (min-width: 1090px) {
    nav {
-    height: 0rem !important;
-    min-height: 8vh !important;
+    height: 0px !important;
+    min-height: 80px !important;
   } 
 } 
-@media only screen and (max-height: 650px) and (min-width: 1074px){
-  body nav .main-title{
-    font-size: 5vh;
-    padding-bottom: 60px;
-  }
-  body nav .nave{
-    padding-bottom: 50px;
-  }
-  body nav .nav-elements{
-    font-size: 2vh;
-  }
-  body nav .social-icons{
-    padding-bottom: 50px;
-  }
-  body nav .social-icons a{
-    font-size: 2.5vh;
-  }
-}
 /*************************************1NAV!**************************************/

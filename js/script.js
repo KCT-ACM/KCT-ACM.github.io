@@ -16,11 +16,12 @@ var animation=bodymovin.loadAnimation({
 	autoplay:true,
 	path:'./js/data.json'
 })
+animation.setSpeed(2);
 window.onload = function () {
     window.setTimeout(function () {
       $("#body").addClass("body");
-    }, 1000);
+    }, 1500);
   };
   $(window).on("load", function () {
-    $("#page-load").delay(1000).fadeOut("slow");
+    $("#page-load").delay(1500).fadeOut("slow");
   });
