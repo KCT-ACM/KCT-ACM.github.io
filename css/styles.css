@@ -1,18 +1,38 @@
+@font-face {
+  font-family: 'Rocknroll';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rocknroll'), local('Rocknroll'), url(../assests/Fonts/RocknRollOne-Regular.ttf) format('truetype');
+}
+@font-face{
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rajdhani'), local('Rajdhani'), url(../assests/Fonts/Rajdhani-SemiBold.ttf);
+}
+@font-face{
+  font-family: 'Stick';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Stick'), local('Stick'), url(../assests/Fonts/Stick-Regular.ttf);
+}
+/*********************************************************************/
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden; 
+  overflow: hidden;
 }
 a {
   text-decoration: none;
   background-color: transparent;
 }
-.body{
-    overflow-x:hidden !important;
-    overflow-y: auto !important;
+.body {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
 }
-.page-load{
+/************************************PAGE LOADING ANIMATION**************************************/
+.page-load {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -21,7 +41,7 @@ a {
   background-color: black;
   background-size: contain;
   overflow-y: hidden;
-} 
+}
 /***************************************NAV**************************************/
 body nav {
   display: flex;
@@ -35,8 +55,8 @@ body nav {
   transition: height 1s ease;
 }
 body nav .main-title {
-  font-size: 2.5em;
-  font-family: "Kanit", sans-serif;
+  font-size:2rem;
+  font-family: "Rocknroll", sans-serif;
   padding-left: 1rem;
   color: aqua;
   cursor: pointer;
@@ -57,10 +77,10 @@ nav .nav-elements a {
   transition: background-color 0.5s ease;
 }
 nav .nav-elements a:hover {
-  background-color:orange;
+  background-color: orange;
   color: black !important;
 }
-nav .nav-elements a:focus{
+nav .nav-elements a:focus {
   color: white;
 }
 nav .social-icons {
@@ -77,10 +97,10 @@ nav .social-icons a {
 nav .social-icons a:hover {
   color: orange;
 }
-nav .ham-burger{
+nav .ham-burger {
   color: aqua;
   font-size: 1.5em;
-  position:absolute;
+  position: absolute;
   top: 17px;
   right: 5%;
   display: none;
@@ -90,21 +110,19 @@ nav span {
 }
 .collapse {
   height: 25rem;
-  
 }
 
-
 @media only screen and (max-width: 1089px) {
-  nav{
-     min-height: 4rem !important; 
-  }  
+  nav {
+    min-height: 4rem !important;
+  }
   nav .nav-elements {
     flex-direction: column;
   }
   nav {
     display: block !important;
     flex-direction: column !important;
-  } 
+  }
   nav .ham-burger {
     display: initial;
   }
@@ -112,14 +130,57 @@ nav span {
     width: 150px;
     padding: 6px 10px;
   }
-  nav .social-icons{
-    margin-left: 2.5rem ;
+  nav .social-icons {
+    margin-left: 2.5rem;
+  }
+  nav .main-title{
+    padding-top: 0.3rem;
   }
 }
- @media only screen and (min-width: 1090px) {
-   nav {
+@media only screen and (min-width: 1090px) {
+  nav {
     height: 0px !important;
     min-height: 80px !important;
-  } 
-} 
+  }
+}
 /*************************************1NAV!**************************************/
+
+/**************************MAIN BACKGROUND**************************************/
+.main-back {
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: black;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assests/pexels-negative-space-34153.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment:fixed;
+  background-repeat: no-repeat; 
+}
+.enable-blur>*{
+  filter: blur(8px);
+  --webkit-filter: blur(8px); 
+}
+.disableblur{
+  filter: blur(0);
+  --webkit-filter: blur(0);
+}
+.theme-text .theme-item{
+  font-family: Stick;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  text-align: center;
+  flex-wrap: wrap;
+  color: white;
+}
+@media only screen and (max-width: 1089px){
+  .theme-text .theme-item{
+    font-size: 3rem;
+  }
+}
+/**************************MAIN BACKGROUND**************************************/

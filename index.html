@@ -8,18 +8,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/all.css" />
     <!--------------------------------------------------------------------------->
-
-    <!------------------------------FONTS----------------------------------------->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./assests/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assests/OwlCarousel/dist/assets/owl.theme.default.min.css">
     <!-----------------------------/FONTS/----------------------------------------->
     <title>KCT ACM</title>
   </head>
@@ -31,7 +21,7 @@
     <nav>
       <div class="main-title">KCT ACM</div>
       <div class="ham-burger">
-          <span><i class="fas fa-bars ham"></i></span>
+        <span><i class="fas fa-bars ham"></i></span>
       </div>
       <div class="nave">
         <ul class="nav-elements">
@@ -50,9 +40,18 @@
       </div>
     </nav>
     <!-------------------------------NAVBAR-END-------------------------------->
+    <!--------------------------Main Background-------------------------------->
+    <main class="main-back">
+        <div class="owl-carousel owl-theme theme-text">
+          <div class="theme-item">Some Random text</div>
+          <div class="theme-item">Some New text</div>
+          <div class="theme-item">Lorem ipsum lorem lorem ipsum</div>
+        </div>
+    </main>
+    <!------------------------//Main Background-------------------------------->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/lottie.js"></script>
+    <script src="./assests/OwlCarousel/dist/owl.carousel.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
-

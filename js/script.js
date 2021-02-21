@@ -22,6 +22,31 @@ window.onload = function () {
       $("#body").addClass("body");
     }, 1500);
   };
+  window.onbeforeunload = function () {
+    window.scrollTo(0,0);
+};
   $(window).on("load", function () {
     $("#page-load").delay(1500).fadeOut("slow");
   });
+  /***************************MAIN SLIDER TEXT*********************** */
+  $('.theme-text').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    center: true,
+    autoplay:true,
+    dots:false,
+    touchDrag:false,
+    mouseDrag:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
