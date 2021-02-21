@@ -11,10 +11,10 @@
   src: local('Rajdhani'), local('Rajdhani'), url(../assests/Fonts/Rajdhani-SemiBold.ttf);
 }
 @font-face{
-  font-family: 'Stick';
+  font-family: 'Josefinsans';
   font-style: normal;
   font-weight: 700;
-  src: local('Stick'), local('Stick'), url(../assests/Fonts/Stick-Regular.ttf);
+  src: local('Josefinsans'),local('Josefinsans'),url(../assests/Fonts/JosefinSans-Italic-VariableFont_wght.ttf);
 }
 /*********************************************************************/
 body {
@@ -53,6 +53,9 @@ body nav {
   min-height: 80px;
   overflow: hidden;
   transition: height 1s ease;
+  position: fixed;
+  width: 100%;
+  z-index: 2; 
 }
 body nav .main-title {
   font-size:2rem;
@@ -147,7 +150,7 @@ nav span {
 
 /**************************MAIN BACKGROUND**************************************/
 .main-back {
-  min-height: 100vh;
+  min-height: 110vh;
   max-width: 100%;
   background-color: black;
    display: flex;
@@ -158,7 +161,7 @@ nav span {
   background-size: cover;
   background-position: center center;
   background-attachment:fixed;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 .enable-blur>*{
   filter: blur(8px);
@@ -169,7 +172,7 @@ nav span {
   --webkit-filter: blur(0);
 }
 .theme-text .theme-item{
-  font-family: Stick;
+  font-family: Josefinsans;
   display: flex;
   align-items: center;
   justify-content: center;
