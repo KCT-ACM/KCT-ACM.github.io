@@ -1,11 +1,4 @@
 @font-face {
-  font-family: "Rocknroll";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Rocknroll"), local("Rocknroll"),
-    url(../assests/Fonts/RocknRollOne-Regular.ttf) format("truetype");
-}
-@font-face {
   font-family: "Rajdhani";
   font-style: normal;
   font-weight: 700;
@@ -26,12 +19,12 @@
   src: local("Kanit"), local("Kanit"),
     url(../assests/Fonts/Kanit-Regular.ttf);
 }
-@font-face {
-  font-family: "NotoSans";
+@font-face{
+  font-family: "OpenSans";
   font-style: normal;
   font-weight: 700;
-  src: local("NotoSans"), local("NotoSans"),
-    url(../assests/Fonts/NotoSansJP-Light.otf);
+  src: local("OpenSans"), local("OpenSans"),
+    url(../assests/Fonts/OpenSansCondensed-Light.ttf);
 }
 /*********************************************************************/
 body {
@@ -76,7 +69,7 @@ body nav {
   z-index: 2;
 }
 body nav .main-title {
-  font-family: "Rocknroll", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   padding-top: 0.3rem;
   color: aqua;
   cursor: pointer;
@@ -273,8 +266,8 @@ nav span {
 } 
 .ab-kct {
   font-size: 1rem;
-  font-family: "NotoSans";
-  font-weight: bold;
+  font-family: "OpenSans"; 
+  font-weight: 900;
   width: fit-content;
   height: fit-content;
 }
