@@ -1,20 +1,37 @@
 @font-face {
-  font-family: 'Rocknroll';
+  font-family: "Rocknroll";
   font-style: normal;
   font-weight: 700;
-  src: local('Rocknroll'), local('Rocknroll'), url(../assests/Fonts/RocknRollOne-Regular.ttf) format('truetype');
+  src: local("Rocknroll"), local("Rocknroll"),
+    url(../assests/Fonts/RocknRollOne-Regular.ttf) format("truetype");
 }
-@font-face{
-  font-family: 'Rajdhani';
+@font-face {
+  font-family: "Rajdhani";
   font-style: normal;
   font-weight: 700;
-  src: local('Rajdhani'), local('Rajdhani'), url(../assests/Fonts/Rajdhani-SemiBold.ttf);
+  src: local("Rajdhani"), local("Rajdhani"),
+    url(../assests/Fonts/Rajdhani-SemiBold.ttf);
 }
-@font-face{
-  font-family: 'Josefinsans';
+@font-face {
+  font-family: "Josefinsans";
   font-style: normal;
   font-weight: 700;
-  src: local('Josefinsans'),local('Josefinsans'),url(../assests/Fonts/JosefinSans-Italic-VariableFont_wght.ttf);
+  src: local("Josefinsans"), local("Josefinsans"),
+    url(../assests/Fonts/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Kanit"), local("Kanit"),
+    url(../assests/Fonts/Kanit-Regular.ttf);
+}
+@font-face {
+  font-family: "NotoSans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("NotoSans"), local("NotoSans"),
+    url(../assests/Fonts/NotoSansJP-Light.otf);
 }
 /*********************************************************************/
 body {
@@ -22,6 +39,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -55,16 +73,16 @@ body nav {
   transition: height 1s ease;
   position: fixed;
   width: 100%;
-  z-index: 2; 
+  z-index: 2;
 }
 body nav .main-title {
   font-family: "Rocknroll", sans-serif;
   padding-top: 0.3rem;
   color: aqua;
   cursor: pointer;
-  width: 160px; 
+  width: 160px;
 }
-.main-title img{
+.main-title img {
   min-height: 3rem;
   max-height: 4.5rem;
   max-width: 6rem;
@@ -84,7 +102,7 @@ nav .nav-elements a {
   font-family: "Rajdhani", sans-serif;
   transition: background-color 0.5s ease;
 }
-.line{
+.line {
   background-color: orange;
   height: 0.2rem;
   width: auto;
@@ -93,10 +111,10 @@ nav .nav-elements a {
   margin: 0;
   transition: visibility 0.1s ease;
 }
-nav .nav-elements a:hover{
+nav .nav-elements a:hover {
   color: orange;
 }
-nav .nav-elements a:focus .line{
+nav .nav-elements a:focus .line {
   visibility: visible;
 }
 nav .nav-elements a:focus {
@@ -152,10 +170,10 @@ nav span {
   nav .social-icons {
     margin-left: 2.5rem;
   }
-  nav .main-title{
+  nav .main-title {
     padding-top: 0.3rem;
   }
-  .main-title img{
+  .main-title img {
     max-height: 3.5rem;
     max-width: 4rem;
     padding-left: 1rem;
@@ -175,25 +193,25 @@ nav span {
   min-height: 110vh;
   max-width: 100%;
   background-color: black;
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("../assests/pexels-negative-space-34153.jpg");
   background-size: cover;
   background-position: center center;
-  background-attachment:fixed;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
-.enable-blur>*{
+.enable-blur > * {
   filter: blur(8px);
-  --webkit-filter: blur(8px); 
+  --webkit-filter: blur(8px);
 }
-.disableblur{
+.disableblur {
   filter: blur(0);
   --webkit-filter: blur(0);
 }
-.theme-text .theme-item{
+.theme-text .theme-item {
   font-family: Josefinsans;
   display: flex;
   align-items: center;
@@ -203,9 +221,116 @@ nav span {
   flex-wrap: wrap;
   color: white;
 }
-@media only screen and (max-width: 1089px){
-  .theme-text .theme-item{
+@media only screen and (max-width: 1089px) {
+  .theme-text .theme-item {
     font-size: 3rem;
   }
 }
 /**************************MAIN BACKGROUND**************************************/
+/***************************************ABOUT************************************/
+.about-con{
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border-radius:.25em;
+}
+.about-kct-con {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+.about-kct-con img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+.ab-kct-p {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  max-width: 500px;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-self: center;
+}
+.ab-kct-p h2{
+  text-align: center;
+  font-family: "Kanit";
+} 
+.ab-kct {
+  font-size: 1rem;
+  font-family: "NotoSans";
+  font-weight: bold;
+  width: fit-content;
+  height: fit-content;
+}
+.ab-acm {
+  flex-direction: row-reverse;
+}
+.acm-img{
+  background-color: white;
+}
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+@media only screen and (max-width: 1089px) {
+  .about-kct-con {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ab-kct-p{
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+}
+
+/*************************************/ /*ABOUT************************************/
