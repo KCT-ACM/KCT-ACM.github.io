@@ -65,3 +65,22 @@ window.onload = function () {
     }
 })
 /********************************************************************** */
+/***************************************Vanilla Tilt*************************** */
+// var destroyBox=document.querySelectorAll(".container");
+// VanillaTilt.init(destroyBox, {
+//   max: 25,
+//   speed: 400
+// });
+// var width=screen.width;
+// if(width<=1089){
+//   destroyBox.vanillaTilt.destroy();
+// }
+const w = screen.width;
+if(w > 1089) { 
+  VanillaTilt.init(document.querySelectorAll(".container"), {
+  max: 30,
+  speed: 3000
+})}
+else {
+    console.log(w);
+ }
