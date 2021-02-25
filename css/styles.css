@@ -335,10 +335,12 @@ nav span {
 }
 .our-team h1{
   color: #fff;
-  font-family: "Raleway";
+  font-family: "Kanit";
   padding-top: 1rem;
   text-align: center;
   width: 100%;
+  font-size: 2rem;
+  font-weight: bolder;
 }
 .container{
   position: relative;
