@@ -217,7 +217,7 @@ nav span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../assests/pexels-negative-space-34153.jpg");
+  background: url("../assests/pexels-negative-space-34153.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; 
@@ -244,6 +244,14 @@ nav span {
 @media only screen and (max-width: 1089px) {
   .theme-text .theme-item {
     font-size: 3rem;
+  }
+  .main-back{
+    background-attachment: unset;
+  }
+}
+@media only screen and (width: 534px){
+  .main-back{
+    background-position: unset;
   }
 }
 /**************************MAIN BACKGROUND**************************************/
@@ -273,7 +281,7 @@ nav span {
   align-items: center;
   justify-content: center;
   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-  box-shadow: rgb(38, 57, 255) 0px 20px 30px -10px;
+  box-shadow: rgb(38, 57, 255) 0px 20px 30px -15px;
 }
 .ab-kct-p {
   padding: 1rem;
@@ -286,7 +294,7 @@ nav span {
   height: fit-content;
   align-items: center;
   justify-self: center;
-  box-shadow: rgb(38, 57, 255) 0px 20px 30px -10px;
+  box-shadow: rgb(38, 57, 255) 0px 20px 30px -15px;
   backdrop-filter: blur(15px);
 }
 .ab-kct-p h2{
@@ -336,9 +344,6 @@ nav span {
     margin: 0 0.7rem;
     margin-top: 1rem;
     padding: 1rem;
-  }
-  .main-back{
-    background-attachment:unset;
   }
   .ab-kct-p{
     animation: none;
@@ -476,6 +481,7 @@ nav span {
     height: 250px;
     width: 140px;
     margin: 0 5px;
+    box-shadow: rgb(38, 57, 255) 0px 20px 30px -20px;
   }
   .container .card .content .imgbx{
     height:100px;
@@ -509,7 +515,7 @@ nav span {
   display: grid;
   grid-template-rows: 30% 20% 50%;
   grid-gap:0.3rem;
-  box-shadow: rgb(38, 57, 255) 0px 20px 30px -10px;
+  box-shadow: rgb(38, 57, 255) 0px 20px 30px -15px;
 }
 .stats .page-views i{
   font-size: 2rem;
