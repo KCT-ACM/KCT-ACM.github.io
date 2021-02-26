@@ -66,15 +66,6 @@ window.onload = function () {
 })
 /********************************************************************** */
 /***************************************Vanilla Tilt*************************** */
-// var destroyBox=document.querySelectorAll(".container");
-// VanillaTilt.init(destroyBox, {
-//   max: 25,
-//   speed: 400
-// });
-// var width=screen.width;
-// if(width<=1089){
-//   destroyBox.vanillaTilt.destroy();
-// }
 const w = screen.width;
 if(w > 1089) { 
   VanillaTilt.init(document.querySelectorAll(".container"), {
@@ -84,3 +75,28 @@ if(w > 1089) {
 else {
     console.log(w);
  }
+ /***********************************************************************************/
+ /************************************************View Count********************************/
+//  for(i=0;i<=190;i++){
+//   fetch('https://api.countapi.xyz/update/acmkct1/acmjsvkct/?amount=1')
+//  }
+ const view_cnt=document.getElementById("views");
+ let value;
+ updvisitorcnt();
+ function updvisitorcnt(){
+   fetch('https://api.countapi.xyz/update/acmkct1/acmjsvkct/?amount=1')
+    .then(res=>res.json())
+    .then(res=>{
+      value=res.value;
+      console.log(res.value);
+      view_cnt.innerHTML=value;
+    })
+ };
+$(document).ready(function(){
+  $(".views").counterUp({
+    time:1000
+  });
+  $(".mem").counterUp({
+    time:1000
+  });
+});
