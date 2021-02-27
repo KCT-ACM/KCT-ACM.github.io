@@ -80,18 +80,18 @@ else {
 //  for(i=0;i<=190;i++){
 //   fetch('https://api.countapi.xyz/update/acmkct1/acmjsvkct/?amount=1')
 //  }
-//  const view_cnt=document.getElementById("views");
-//  let value;
-//  updvisitorcnt();
-//  function updvisitorcnt(){
-//    fetch('https://api.countapi.xyz/update/acmkct1/acmjsvkct/?amount=1')
-//     .then(res=>res.json())
-//     .then(res=>{
-//       value=res.value;
-//       console.log(res.value);
-//       view_cnt.innerHTML=value;
-//     })
-//  };
+ const view_cnt=document.getElementById("views");
+ let value;
+ updvisitorcnt();
+ function updvisitorcnt(){
+   fetch('https://api.countapi.xyz/update/acmkct1/acmjsvkct/?amount=1')
+    .then(res=>res.json())
+    .then(res=>{
+      value=res.value;
+      console.log(res.value);
+      view_cnt.innerHTML=value;
+    })
+ };
 $(document).ready(function(){
   $(".views").counterUp({
     time:1000
