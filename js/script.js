@@ -28,7 +28,7 @@ var animation=bodymovin.loadAnimation({
 	container:document.getElementById('page-load'),
 	loop:true,
 	autoplay:true,
-	path:'./js/data.json'
+	path:'./js/final_data.json'
 })
 animation.setSpeed(2);
 window.onload = function () {
@@ -88,7 +88,6 @@ else {
     .then(res=>res.json())
     .then(res=>{
       value=res.value;
-      console.log(res.value);
       view_cnt.innerHTML=value;
     })
  };
@@ -99,4 +98,23 @@ $(document).ready(function(){
   $(".mem").counterUp({
     time:1000
   });
+});
+/*****************************************************************************************/
+$(function(){
+  $("form").validate();
+});
+$("form").on("submit", function (e) {
+  var dataString = $(this).serialize();
+   
+  $.ajax({
+    type: "POST",
+    url: "https://docs.google.com/forms/u/6/d/e/1FAIpQLSffJwe4eMML7embowukCdkVpJtGswRVo4cH0HEwQ79nRvv3pg/formResponse",
+    data: dataString
+  });
+  document.getElementById('success').style.visibility = 'visible';
+                setTimeout(function () {
+                    document.getElementById('success').style.visibility = 'hidden';
+                }, 2000);
+  e.preventDefault();
+  document.getElementById('form').reset();
 });
