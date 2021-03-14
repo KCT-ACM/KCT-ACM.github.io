@@ -36,12 +36,12 @@ window.onload = function () {
       $("#body").addClass("body");
     }, 1500);
   };
-  window.onbeforeunload = function () {
-    window.scrollTo(0,0);
-};
   $(window).on("load", function () {
     $("#page-load").delay(1500).fadeOut("slow");
   });
+  $(window).on("load",function(){
+    $("#body").style.visibility="hidden"
+  })
   /***************************MAIN SLIDER TEXT*********************** */
   $('.theme-text').owlCarousel({
     loop:true,
