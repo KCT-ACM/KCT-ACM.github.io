@@ -39,9 +39,6 @@ window.onload = function () {
   $(window).on("load", function () {
     $("#page-load").delay(1500).fadeOut("slow");
   });
-  $(window).on("load",function(){
-    $("#body").style.visibility="hidden"
-  })
   /***************************MAIN SLIDER TEXT*********************** */
   $('.theme-text').owlCarousel({
     loop:true,
@@ -100,9 +97,6 @@ $(document).ready(function(){
   });
 });
 /*****************************************************************************************/
-$(function(){
-  $("form").validate();
-});
 $("form").on("submit", function (e) {
   var dataString = $(this).serialize();
    
