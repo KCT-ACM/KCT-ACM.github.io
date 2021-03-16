@@ -74,8 +74,8 @@ else {
  }
  /***********************************************************************************/
  /************************************************View Count********************************/
-//  for(i=0;i<=190;i++){
-//   fetch('https://api.countapi.xyz/update/acmkct1/acmjsvkct/?amount=1')
+//  for(i=0;i<=200;i++){
+//   fetch('https://api.countapi.xyz/update/acmkct1/acmjsvkct/?amount=-1')
 //  }
  const view_cnt=document.getElementById("views");
  let value;
