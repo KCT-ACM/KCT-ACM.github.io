@@ -111,4 +111,7 @@ $("form").on("submit", function (e) {
                 }, 2000);
   e.preventDefault();
   document.getElementById('form').reset();
+  setTimeout(function(){
+    location.reload();
+  },1000);
 });
