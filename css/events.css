@@ -1,0 +1,9 @@
+.main-cont{
+    height: 100vh;
+}
+#page-ref li{
+    color: white;
+}
+#page-ref .line{
+    visibility: visible;
+}
