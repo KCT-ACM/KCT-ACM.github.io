@@ -35,6 +35,7 @@ window.onload = function () {
     window.setTimeout(function () {
       $("#body").addClass("body");
     }, 1500);
+    
   };
   $(window).on("load", function () {
     $("#page-load").delay(1500).fadeOut("slow");
