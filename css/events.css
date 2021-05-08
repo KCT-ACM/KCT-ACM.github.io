@@ -95,8 +95,8 @@ h1{
 .tick-cont svg{
     color: greenyellow;
 }
-.tick-cont .crosser{
-    color: red;
+.tick-cont .load-icon{
+    /* color:white; */
 }
 @media (max-width:1089px){
     .event-cont{
