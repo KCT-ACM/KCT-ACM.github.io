@@ -66,7 +66,7 @@ body nav .main-title {
 .main-title img {
   min-height: 3rem;
   max-height: 4.5rem;
-  max-width: 6rem;
+  /* max-width: 6rem; */
   margin-left: 15px;
   pointer-events: none;
 }
