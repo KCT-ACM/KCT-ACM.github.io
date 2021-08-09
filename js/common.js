@@ -34,11 +34,11 @@ animation.setSpeed(2);
 window.onload = function () {
     window.setTimeout(function () {
       $("#body").addClass("body");
-    }, 1500);
+    }, 100);
     
   };
   $(window).on("load", function () {
-    $("#page-load").delay(1500).fadeOut("slow");
+    $("#page-load").delay(100).fadeOut("slow");
   });
   /********************************************************************/
   let barrer= document.getElementById("progress");
