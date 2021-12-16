@@ -1,13 +1,21 @@
+:root{
+  --blue-main:#1B2941;
+  --green-main:#79BEAD;
+  --green-grad:transparent linear-gradient(359deg, #5CA895 0%, #96D5C5 100%) 0% 0% no-repeat padding-box;
+}
+
+
 /**************************MAIN BACKGROUND**************************************/
 .main-back {
   min-height: 110vh;
   max-width: 100%;
-  background-color: black;
+  background-color: var(--blue-main);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("../assests/pexels-negative-space-34153.jpg");
+  /* background: url("../assests/pexels-negative-space-34153.jpg"); */
+  background: url("../assests/IMG_20190918_105547.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -29,6 +37,7 @@
   text-align: center;
   flex-wrap: wrap;
   color: white;
+  text-shadow: 5px 5px 1px var(--blue-main);
 }
 @media only screen and (max-width: 1089px) {
   .theme-text .theme-item {
@@ -46,8 +55,7 @@
 /**************************MAIN BACKGROUND**************************************/
 /***************************************ABOUT************************************/
 .about-con{
- /* background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%); */
-  background-color: black;
+  background-color: white;
   margin: 0;
   padding: 0;
   align-items: center;
@@ -74,22 +82,19 @@
   display: inline;
   align-items: center;
   justify-content: center;
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-  box-shadow: rgb(38, 57, 255) 0px 20px 30px -15px;
 }
 .ab-kct-p {
   padding: 1rem;
   border-radius: 1rem;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: var(--green-grad);
+  color: var(--blue-main);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
   display: flex;
   flex-direction: column;
   max-width: 500px;
   width: fit-content;
   height: fit-content;
   min-height: 300px;
-  box-shadow: rgb(38, 57, 255) 0px 20px 30px -15px;
   backdrop-filter: blur(15px);
   justify-content: center;
 }
@@ -150,11 +155,11 @@
   justify-content: center;
   flex-wrap: wrap;
   display: flex;
-  background-color: black;
-  /* background-image: url(../assests/back1.png); */
+  background-color: var(--blue-main);
+  background-color: rgb(255, 255, 255);
 }
 .our-team h1{
-  color: #fff;
+  color: var(--blue-main);
   font-family: "Kanit";
   padding-top: 1rem;
   text-align: center;
@@ -175,25 +180,15 @@
   position: relative;
   width: 300px;
   height: 400px;
-  background-color: rgba(0, 0, 0, 10);
+  background-color: #1B2941;
   margin: 20px;
-  /* box-shadow: 0 15px 35px rgba(225, 225, 225, 0.2); */
-  box-shadow: rgb(38, 57, 255) 0px 20px 30px -10px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(10px);
 }
-.container .card:hover{
-  /* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */
-  /* background-color: rgba(38,57,255,0.6); */
-  background-color: rgba(255,255,255,0.08);
-  box-shadow: rgb(255, 25, 147) 0px 20px 30px -10px;
-}
-.container .card:hover .content .imgbx{
-  border: 5px solid rgb(255, 25, 147)
-}
+
 .container .card .content{
   position: relative;
   display: flex;
@@ -212,7 +207,7 @@
   height: 200px;
   border-radius: 50%;
   overflow: hidden !important;
-  border: 5px solid rgb(38,57,255);
+  border: 5px solid #94D5C5;
   pointer-events: none;
 }
 .container .card .content .imgbx img{
@@ -261,6 +256,10 @@
   font-size: 24px;
 }
 @media only screen and (max-width: 1089px){
+  .main-back{
+    background: url('../assests/70310711_143095153637083_6314318445248146896_n.jpg');
+    background-size: cover;
+  }
   .our-team{
     background-image: none;
   }
@@ -280,7 +279,6 @@
     height: 250px;
     width: 140px;
     margin: 0 5px;
-    box-shadow: rgb(38, 57, 255) 0px 20px 30px -20px;
   }
   .container .card .content .imgbx{
     height:100px;
@@ -295,26 +293,23 @@
   .container .card .soc-i{
     bottom: 15px;
   }
-  .container .card:hover{
-    background-color: unset;
-  }
 }
 /**********************************************************************************/
 /*********************************Stats********************************************/
 .stats{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: black;
+  background-color: white;
   grid-column-gap: 1rem;
 }
 .stats .page-views{
   border-radius: 1rem;
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background: var(--green-grad);
+  color: var(--blue-main);
   text-align: center;
   display: grid;
   grid-template-rows: 30% 20% 50%;
   grid-gap:0.3rem;
-  box-shadow: rgb(38, 57, 255) 0px 20px 30px -15px;
 }
 .stats .page-views i{
   font-size: 2rem;
@@ -333,12 +328,12 @@
   font-family: "Josefinsans";
 }
 .statistics{
-  background-color: black;
+  background-color: white;
   padding:2rem;
 }
 .statistics h1{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: var(--blue-main);
   margin: 0;
   text-align: center;
   padding-bottom: 1rem;

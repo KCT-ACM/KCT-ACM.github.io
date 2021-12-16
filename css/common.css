@@ -1,4 +1,11 @@
 @import url(./fonts.css);
+
+:root{
+  --blue-main:#1B2941;
+  --green-main:#79BEAD;
+  --green-grad:transparent linear-gradient(359deg, #5CA895 0%, #96D5C5 100%) 0% 0% no-repeat padding-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -23,17 +30,17 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+  background: var(--blue-main);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  background: linear-gradient(to top, var(--green-main) 0%, #68e0cf 100%);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(to right, var(--green-main) 0%, #00f2fe 100%);
 }
 /*********************************************************************/
 /***************************************NAV**************************************/
@@ -41,7 +48,7 @@ body nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: var(--blue-main);
   flex-wrap: wrap;
   height: 0px;
   min-height: 80px;
@@ -52,14 +59,11 @@ body nav {
   left: 0;
   width: 100%;
   z-index: 2;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
-    rgba(255, 255, 255, 0.23) 0px 3px 6px;
-  /* opacity: 0.8; */
 }
 body nav .main-title {
   font-family: "Times New Roman", Times, serif;
   padding-top: 0.3rem;
-  color: aqua;
+  color: var(--green-main);
   cursor: pointer;
   width: 160px;
 }
@@ -78,14 +82,14 @@ nav .nav-elements li {
 }
 nav .nav-elements a {
   text-decoration: none;
-  color: aqua;
+  color: white;
   padding: 3px 15px;
   font-size: 1.5em;
   font-family: "Rajdhani", sans-serif;
   transition: background-color 0.5s ease;
 }
 .line {
-  background-color: orange;
+  background-color: white;
   height: 0.2rem;
   width: auto;
   visibility: hidden;
@@ -94,13 +98,13 @@ nav .nav-elements a {
   transition: visibility 0.1s ease;
 }
 nav .nav-elements a:hover {
-  color: orange;
+  color: var(--green-main);
 }
 nav .nav-elements a:focus .line {
   visibility: visible;
 }
 nav .nav-elements a:focus {
-  color: white;
+  color: var(--green-main);
 }
 nav .social-icons {
   display: flex;
@@ -108,16 +112,16 @@ nav .social-icons {
   margin-right: 1rem;
 }
 nav .social-icons a {
-  color: aqua;
+  color: white;
   font-size: 1.5em;
   padding: 0px 8px;
   transition: color 0.4s ease;
 }
 nav .social-icons a:hover {
-  color: orange;
+  color: var(--green-main);
 }
 nav .ham-burger {
-  color: aqua;
+  color: white;
   font-size: 1.5em;
   position: absolute;
   top: 17px;
@@ -197,7 +201,7 @@ footer h1{
 .contact-us-cont{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: black;
+  background-color: white;
   padding: 3rem 0;
 }
 /* footer img{
@@ -243,21 +247,15 @@ footer img{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* background-color: #00f2fe; */
   border-radius: 1.1rem;
   height: 300px;
   width: 350px;
   align-self: center;
   justify-self: center;
-  background-color: rgba(25, 25, 25, 15);
+  background-color: var(--blue-main);
   backdrop-filter: blur(30px);
-  box-shadow: rgb(38, 57, 255) 0px 20px 30px -15px;
 }
-/* .footer-con .clg-icons a{
-  margin: 0.5rem 0rem;
-  min-width: 250px;
-  box-sizing: border-box;
-} */
+
 footer .dev-det{
   text-align: center;
   font-family: "Raleway-italic";
@@ -281,41 +279,29 @@ footer h1{
   font-size: 2.5rem;
 }
 .fa-paper-plane{
-  color: #00f2fe;
+  color: var(--blue-main);
 }
 form button{
-  background-color: black;
+  background-color: white;
   outline: none;
   border: none;
   border-radius: 0.3rem;
   padding: 0.5rem;
-  color: #00f2fe;
+  color: var(--blue-main);
   font-family: 'Kanit';
   cursor: pointer;
   margin: 0.3rem 0;
   align-self: center;
 }
-/* footer .dev-det h2{
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  font-family: "Kanit";
-  font-weight: bold;
-} */
-/* footer .dev-det h3{
-  font-family: "Raleway-Italic";
-  font-size: 1.5rem;
-} */
 
 .contact-us-cont form{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: white;
+  background-color: var(--blue-main);
   padding: 0.4rem 0.6rem;
   border-radius: 1.1rem;
-  background-color: rgba(25, 25, 25, 15);
   backdrop-filter: blur(30px);
-  box-shadow: rgb(38, 57, 255) 0px 20px 30px -15px;
   width: 350px;
   height: 300px;
   box-sizing: border-box;
@@ -341,18 +327,15 @@ form #input{
   padding: 0.3rem;
   font-size: 1rem;
   width: auto;
-  border-bottom: solid 1px skyblue;
+  border-bottom: solid 1px var(--green-main);
   color: white;
   outline: none;
   background-color: transparent;
   font-family: 'Kanit';
 }
-form button:hover{
-  color: greenyellow;
-}
-.contact-us-cont button:hover .fa-paper-plane{
-  color: greenyellow;
-}
+
+
+
 .contact-us-cont form .success{
   font-family: "Raleway-Bold";
   visibility: hidden;
@@ -363,23 +346,10 @@ form button:hover{
   margin: 0.2rem 0;
   color: white;
 }
-form:hover{
-  box-shadow: rgb(255, 57, 150) 0px 20px 30px -15px;
-}
-form:hover button{
-  color: rgb(255, 57, 150);
-}
-form button:hover{
-  color: greenyellow;
-}
-form:hover .fa-paper-plane{
-  color:  rgb(255, 57, 150);;
-}
-form:hover #input{
-  border-bottom: solid 1px rgb(255, 57, 150);
-}
+
+
 #input:focus{
-  border-bottom:solid 1px orange !important;
+  border-bottom:solid 1px white !important;
 }
 footer .copyright{
   text-align: center;
@@ -420,16 +390,11 @@ footer img{
   align-self: center;
   justify-self: center;
 }
-.clg-soc-links-cont:hover{
-  box-shadow: rgb(255, 57, 150) 0px 20px 30px -15px;
-}
+
 .mapouter{
-  box-shadow: rgb(38, 57, 255) 0px 20px 30px -15px;
   justify-self: center;
 }
-.mapouter:hover{
-  box-shadow: rgb(255, 57, 150) 0px 20px 30px -15px;
-}
+
 @media only screen and (max-width:1076px){
  .contact-us-cont{
     grid-template-columns: 1fr !important;
@@ -470,7 +435,7 @@ footer img{
 /**************************************FOOTER**************************************/
 /**************************************************************/
 #progress {
-  border-bottom: 2px solid aqua;
+  border-bottom: 2px solid var(--green-main);
   width: 0;
   position: fixed;
   top:82px;
