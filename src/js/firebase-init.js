@@ -2,14 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyClEH2YrNEqZBkpXOULf4CcYwR7H3L9cN4",
-  authDomain: "kct-acm.firebaseapp.com",
-  databaseURL: "https://kct-acm-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "kct-acm",
-  storageBucket: "kct-acm.appspot.com",
-  messagingSenderId: "873681637837",
-  appId: "1:873681637837:web:491571063e3f3db73b3484",
-  measurementId: "G-G7YZ1MSEZ4"
+  apiKey: "AIzaSyAl_z5QnFtOqcS1Gq4etStPKDswdUuWsXo",
+  authDomain: "kct-acm-51215.firebaseapp.com",
+  projectId: "kct-acm-51215",
+  databaseURL: "https://kct-acm-51215-default-rtdb.asia-southeast1.firebasedatabase.app/",
+  storageBucket: "kct-acm-51215.appspot.com",
+  messagingSenderId: "65366423521",
+  appId: "1:65366423521:web:3399c705853bcc858bc4a0",
+  measurementId: "G-N40B1XZ614"
 };
 
 export const app = initializeApp(firebaseConfig);
