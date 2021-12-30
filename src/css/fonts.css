@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Rajdhani";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Rajdhani"), local("Rajdhani"),
+      url(../assests/Fonts/Rajdhani-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: "Josefinsans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Josefinsans"), local("Josefinsans"),
+      url(../assests/Fonts/JosefinSans-Italic-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Kanit"), local("Kanit"),
+      url(../assests/Fonts/Kanit-Regular.ttf);
+  }
+  @font-face{
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("OpenSans"), local("OpenSans"),
+      url(../assests/Fonts/OpenSansCondensed-Light.ttf);
+  }
+  @font-face{
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Raleway"), local("Raleway"),
+      url(../assests/Fonts/Raleway-Regular.ttf);
+  }
+  @font-face{
+    font-family: "Raleway-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Raleway"), local("Raleway"),
+      url(../assests/Fonts/Raleway-Bold.ttf);
+  }
+  @font-face{
+    font-family: "Raleway-Italic";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Raleway-Italic"), local("Raleway-Italic"),
+      url(../assests/Fonts/Raleway-SemiBoldItalic.ttf);
+  }
