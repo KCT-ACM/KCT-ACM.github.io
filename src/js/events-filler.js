@@ -12,7 +12,7 @@ async function EventsFiller(){
     data=await data.val();
     data=await [...data];
     data=data.sort((a,b)=>{
-        if(a["date"]>b["date"]){
+        if(a["date"]< b["date"]){
             return 1;
         }
         else if(b["date"]===a["date"]){
