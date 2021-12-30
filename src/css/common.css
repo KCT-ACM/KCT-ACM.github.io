@@ -65,6 +65,7 @@ body nav .main-title {
   padding-top: 0.3rem;
   color: var(--green-main);
   cursor: pointer;
+  display: flex;
   width: 160px;
 }
 .main-title img {
@@ -200,7 +201,7 @@ footer h1{
 }
 .contact-us-cont{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   background-color: #eeeeee;
   padding: 3rem 0;
 }
@@ -278,7 +279,7 @@ footer h1{
   font-weight: bolder;
   font-size: 2.5rem;
 }
-.fa-paper-plane{
+/* .fa-paper-plane{
   color: var(--blue-main);
 }
 form button{
@@ -332,11 +333,11 @@ form #input{
   outline: none;
   background-color: transparent;
   font-family: 'Kanit';
-}
+} */
 
 
 
-.contact-us-cont form .success{
+/* .contact-us-cont form .success{
   font-family: "Raleway-Bold";
   visibility: hidden;
   font-size: 0.7rem;
@@ -345,7 +346,7 @@ form #input{
   transition-delay: 0.2s;
   margin: 0.2rem 0;
   color: white;
-}
+} */
 
 
 #input:focus{
@@ -398,7 +399,7 @@ footer img{
 @media only screen and (max-width:1076px){
  .contact-us-cont{
     grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 3rem;
   }
 }
