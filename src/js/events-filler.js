@@ -11,6 +11,17 @@ async function EventsFiller(){
     let data=await readDB("data");
     data=await data.val();
     data=await [...data];
+    data=data.sort((a,b)=>{
+        if(a["date"]>b["date"]){
+            return 1;
+        }
+        else if(b["date"]===a["date"]){
+            return 0;
+        }
+        else{
+            return -1;
+        }
+    });
     await data.forEach(d=>{
         let element=document.createElement("div");
         element.classList.add("event-cont");
