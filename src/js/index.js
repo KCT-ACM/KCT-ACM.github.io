@@ -56,23 +56,20 @@ $(document).ready(function(){
   });
 });
 /*****************************************************************************************/
-$("form").on("submit", function (e) {
-  var dataString = $(this).serialize();
+// $("form").on("submit", function (e) {
+//   var dataString = $(this).serialize();
    
-  $.ajax({
-    type: "POST",
-    url: "https://docs.google.com/forms/u/6/d/e/1FAIpQLSffJwe4eMML7embowukCdkVpJtGswRVo4cH0HEwQ79nRvv3pg/formResponse",
-    data: dataString
-  });
-  document.getElementById('success').style.visibility = 'visible';
-                setTimeout(function () {
-                    document.getElementById('success').style.visibility = 'hidden';
-                }, 2000);
-  e.preventDefault();
-  document.getElementById('form').reset();
-  document.querySelector('.submitter').setAttribute('disabled','disabled');
-  // setTimeout(function(){
-  //   location.reload();
-  // },1000);
-});
+//   $.ajax({
+//     type: "POST",
+//     url: "https://docs.google.com/forms/u/6/d/e/1FAIpQLSffJwe4eMML7embowukCdkVpJtGswRVo4cH0HEwQ79nRvv3pg/formResponse",
+//     data: dataString
+//   });
+//   document.getElementById('success').style.visibility = 'visible';
+//                 setTimeout(function () {
+//                     document.getElementById('success').style.visibility = 'hidden';
+//                 }, 2000);
+//   e.preventDefault();
+//   document.getElementById('form').reset();
+//   document.querySelector('.submitter').setAttribute('disabled','disabled');
+// });
 /********************************************************************************************************************************/
