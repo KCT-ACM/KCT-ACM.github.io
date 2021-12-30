@@ -22,6 +22,7 @@ async function EventsFiller(){
             return -1;
         }
     });
+    console.log(data);
     await data.forEach(d=>{
         let element=document.createElement("div");
         element.classList.add("event-cont");
