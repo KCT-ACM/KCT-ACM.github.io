@@ -4589,7 +4589,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
   font-display: block;
   src: url(assets/fa-brands-400.eot);
-  src: url(assets/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(assets/fa-brands-400.woff2) format("woff2"), url(assets/fa-brands-400.woff) format("woff"), url(assets/fa-brands-400.330e879afe4a0abb35f2..ttf) format("truetype"), url(assets/fa-brands-400.991c1c761fc31f9c3252..svg#fontawesome) format("svg"); }
+  src: url(assets/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(assets/fa-brands-400.woff2) format("woff2"), url(assets/fa-brands-400.woff) format("woff"), url(assets/fa-brands-400.ttf) format("truetype"), url(assets/fa-brands-400.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands';
@@ -4600,7 +4600,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
   font-display: block;
   src: url(assets/fa-regular-400.eot);
-  src: url(assets/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(assets/fa-regular-400.woff2) format("woff2"), url(assets/fa-regular-400.woff) format("woff"), url(assets/fa-regular-400.ac2367644e559de4ff33..ttf) format("truetype"), url(assets/fa-regular-400.f3187c7462849ed261a8..svg#fontawesome) format("svg"); }
+  src: url(assets/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(assets/fa-regular-400.woff2) format("woff2"), url(assets/fa-regular-400.woff) format("woff"), url(assets/fa-regular-400.ttf) format("truetype"), url(assets/fa-regular-400.svg#fontawesome) format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -4611,7 +4611,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   font-display: block;
   src: url(assets/fa-solid-900.eot);
-  src: url(assets/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(assets/fa-solid-900.woff2) format("woff2"), url(assets/fa-solid-900.woff) format("woff"), url(assets/fa-solid-900.915a0b79c22a1c1f64da..ttf) format("truetype"), url(assets/fa-solid-900.0454203f26b33fc02e2b..svg#fontawesome) format("svg"); }
+  src: url(assets/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(assets/fa-solid-900.woff2) format("woff2"), url(assets/fa-solid-900.woff) format("woff"), url(assets/fa-solid-900.ttf) format("truetype"), url(assets/fa-solid-900.svg#fontawesome) format("svg"); }
 
 .fa,
 .fas {
@@ -4623,49 +4623,49 @@ readers do not read off random characters that represent icons */
     font-style: normal;
     font-weight: 700;
     src: local("Rajdhani"), local("Rajdhani"),
-      url(assets/Rajdhani-SemiBold.aac5f5aeba80e64c5532..ttf);
+      url(assets/Rajdhani-SemiBold.ttf);
   }
   @font-face {
     font-family: "Josefinsans";
     font-style: normal;
     font-weight: 700;
     src: local("Josefinsans"), local("Josefinsans"),
-      url(assets/JosefinSans-Italic-VariableFont_wght.28d1ac98e06dc0f5d52c..ttf);
+      url(assets/JosefinSans-Italic-VariableFont_wght.ttf);
   }
   @font-face {
     font-family: "Kanit";
     font-style: normal;
     font-weight: 700;
     src: local("Kanit"), local("Kanit"),
-      url(assets/Kanit-Regular.6e70a0feca5371044fd1..ttf);
+      url(assets/Kanit-Regular.ttf);
   }
   @font-face{
     font-family: "OpenSans";
     font-style: normal;
     font-weight: 700;
     src: local("OpenSans"), local("OpenSans"),
-      url(assets/OpenSansCondensed-Light.e1803add2849dc2c9108..ttf);
+      url(assets/OpenSansCondensed-Light.ttf);
   }
   @font-face{
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
     src: local("Raleway"), local("Raleway"),
-      url(assets/Raleway-Regular.9ade142e81dd8d55cd32..ttf);
+      url(assets/Raleway-Regular.ttf);
   }
   @font-face{
     font-family: "Raleway-Bold";
     font-style: normal;
     font-weight: 700;
     src: local("Raleway"), local("Raleway"),
-      url(assets/Raleway-Bold.d1a96e2aa6257c864d4d..ttf);
+      url(assets/Raleway-Bold.ttf);
   }
   @font-face{
     font-family: "Raleway-Italic";
     font-style: normal;
     font-weight: 700;
     src: local("Raleway-Italic"), local("Raleway-Italic"),
-      url(assets/Raleway-SemiBoldItalic.3341b121b13fa2052f8c..ttf);
+      url(assets/Raleway-SemiBoldItalic.ttf);
   }
 :root{
   --blue-main:#1B2941;
